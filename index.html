@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Derleen Saini — Data Analyst & Data Scientist</title>
+  <meta name="description" content="Portfolio of Derleen Saini, data analyst and data scientist specializing in SQL, NLP, and generative AI." />
+
+  <!-- Fonts: Playfair Display (display serif), Inter (body), Dancing Script (accent) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&display=swap" rel="stylesheet" />
+
+  <!-- Cache-busted so style edits always show on a normal refresh -->
+  <script>document.write('<link rel="stylesheet" href="styles.css?t=' + Date.now() + '">');</script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__brand" data-bind="nav.brand"></a>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#leadership">My Interests</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact" class="nav__cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__inner">
+        <div class="hero__text">
+          <p class="hero__eyebrow" data-bind="hero.eyebrow"></p>
+          <h1 class="hero__title">
+            <span class="hero__line" data-bind="hero.headlineTop"></span>
+            <span class="hero__line" data-bind="hero.headlineBottom"></span>
+            <span class="hero__script" data-bind="meta.scriptAccent"></span>
+          </h1>
+          <p class="hero__tagline" data-bind="meta.tagline"></p>
+          <div class="hero__actions">
+            <a href="#experience" class="btn btn--solid" data-bind="hero.ctaPrimary"></a>
+            <a href="#contact" class="btn btn--ghost" data-bind="hero.ctaSecondary"></a>
+          </div>
+        </div>
+        <div class="hero__photo">
+          <div class="hero__photo-frame">
+            <img id="heroPhoto" alt="Portrait of Derleen Saini" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="section__head">
+        <span class="section__num">01</span>
+        <h2 class="section__title" data-bind="about.heading"></h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__text" id="aboutText"></div>
+        <div class="about__icons" id="aboutIcons"></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section experience" id="experience">
+      <div class="section__head">
+        <span class="section__num">02</span>
+        <h2 class="section__title" data-bind="experience.heading"></h2>
+      </div>
+      <div class="timeline" id="experienceList"></div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills" id="skills">
+      <div class="section__head">
+        <span class="section__num">03</span>
+        <h2 class="section__title" data-bind="skills.heading"></h2>
+      </div>
+      <div class="skills__grid" id="skillsGrid"></div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects">
+      <div class="section__head">
+        <span class="section__num">04</span>
+        <h2 class="section__title" data-bind="projects.heading"></h2>
+      </div>
+      <div class="projects__list" id="projectsList"></div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section education" id="education">
+      <div class="section__head">
+        <span class="section__num">05</span>
+        <h2 class="section__title" data-bind="education.heading"></h2>
+      </div>
+      <div class="education__list" id="educationList"></div>
+    </section>
+
+    <!-- LEADERSHIP -->
+    <section class="section leadership" id="leadership">
+      <div class="section__head">
+        <span class="section__num">06</span>
+        <h2 class="section__title" data-bind="leadership.heading"></h2>
+      </div>
+      <div class="leadership__list" id="leadershipList"></div>
+      <div class="leadership__gallery" id="leadershipGallery"></div>
+      <div class="leadership__list leadership__list--below" id="leadershipListBelow"></div>
+    </section>
+
+    <!-- RESUME -->
+    <section class="section resume" id="resume">
+      <div class="section__head">
+        <span class="section__num">07</span>
+        <h2 class="section__title" data-bind="resume.heading"></h2>
+      </div>
+      <p class="resume__blurb" data-bind="resume.blurb"></p>
+      <div class="resume__actions">
+        <a id="resumeDownload" class="btn btn--solid" download></a>
+        <a id="resumeView" class="btn btn--ghost" target="_blank" rel="noopener"></a>
+      </div>
+      <div class="resume__viewer">
+        <iframe id="resumeFrame" title="Derleen Saini résumé" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="section__head">
+        <span class="section__num">08</span>
+        <h2 class="section__title" data-bind="contact.heading"></h2>
+      </div>
+      <p class="contact__blurb" data-bind="contact.blurb"></p>
+      <div class="contact__cards" id="contactCards"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p data-bind="footer.note"></p>
+    <p class="footer__year" id="footerYear"></p>
+  </footer>
+
+  <!-- Load content + logic with a cache-buster so edits always show on refresh -->
+  <script>
+    (function () {
+      // Always open at the top of the page on load/reload (don't restore scroll).
+      if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+      function load(src, next) {
+        var s = document.createElement("script");
+        s.src = src + "?t=" + Date.now();
+        s.onload = next || function () {};
+        document.body.appendChild(s);
+      }
+      load("content.js", function () { load("main.js", function () { window.scrollTo(0, 0); }); });
+    })();
+  </script>
+</body>
+</html>
