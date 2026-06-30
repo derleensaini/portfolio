@@ -1,0 +1,13 @@
+<svg width="140" height="140" viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Data visualization icon</title>
+<rect x="4" y="4" width="132" height="132" rx="16" fill="#f4ecd9" stroke="#7a2233" stroke-width="1"/>
+<rect x="42" y="78" width="14" height="18" rx="2" fill="#7a2233"/>
+<rect x="62" y="66" width="14" height="30" rx="2" fill="#7a2233"/>
+<rect x="82" y="52" width="14" height="44" rx="2" fill="#7a2233"/>
+<line x1="36" y1="98" x2="104" y2="98" stroke="#211d1b" stroke-width="2" stroke-linecap="round"/>
+<polyline points="42,82 62,70 82,56 98,44" fill="none" stroke="#211d1b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="42" cy="82" r="3.5" fill="#211d1b"/>
+<circle cx="62" cy="70" r="3.5" fill="#211d1b"/>
+<circle cx="82" cy="56" r="3.5" fill="#211d1b"/>
+<circle cx="98" cy="44" r="3.5" fill="#211d1b"/>
+</svg>
