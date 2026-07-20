@@ -119,6 +119,18 @@ const CONTENT = {
     // Each project has: title, summary, context, data, results, and tags.
     items: [
       {
+        title: "AI Data Analyst Agent",
+        summary: "A web app that lets anyone query a dataset in plain English.",
+        context: "Users upload a CSV or pick a sample, ask a question, and an AI agent writes and runs the SQL and Python to answer it, then charts the result.",
+        data: "Built an agent loop with tool calling, automatic data-quality profiling, and an interactive cleaning panel that requires confirmation for judgment calls and logs every change.",
+        results: "Validated accuracy with an 11-question hand-graded eval, which caught and fixed an ungrounded-number bug and guided the production model choice.",
+        tags: ["Streamlit", "DuckDB", "Plotly", "Anthropic API"],
+        links: [
+          { label: "View live app", url: "https://ai-data-analyst-derleensaini.streamlit.app/" },
+          { label: "View on GitHub", url: "https://github.com/derleensaini/ai-data-analyst" },
+        ],
+      },
+      {
         title: "Divvy Bike Share — Data Warehousing & BI",
         summary: "A full analytics lifecycle for a city bike share system, from raw trips to executive dashboards.",
         context: "Built an end-to-end pipeline to help operations teams make pricing, station rebalancing, and membership decisions.",
